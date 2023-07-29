@@ -7,14 +7,14 @@ import Wrapper from '@/components/Wrapper';
 const Home = () => {
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='mt-16 mb-12'>
-			<h1 className='text-xl'>hi there, I'm Cosmin 👋</h1>
+			<h1 className='text-xl'>hi there, I&apos;m Cosmin 👋</h1>
 			<div className='flex gap-1 items-center text-sm text-zinc-700'>
 				<MapPinIcon className='w-4 my-auto' />
 				<p>Bucharest, Romania</p>
 			</div>
 			<p className='text-zinc-400 my-6'>
-				I'm a self-taught fullstack developer, perfectionist, and travel enthusiast. I currently freelance most
-				of my work, as I gain more experience, while actively looking for a part-time or full-time position
+				I&apos;m a self-taught fullstack developer, perfectionist, and travel enthusiast. I currently freelance
+				most of my work, as I gain more experience, while actively looking for a part-time or full-time position
 				during my university studies.
 			</p>
 			<h2 className='my-3 text-3xl font-medium'>Technologies</h2>
