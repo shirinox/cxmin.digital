@@ -9,7 +9,7 @@ const TechnologiesWrapper = ({ title, children }: Props) => {
 	return (
 		<div className='ml-3'>
 			<h3 className='text-xl text-zinc-300'>{title}</h3>
-			<ul className='text-zinc-500 flex gap-4'>{children}</ul>
+			<ul className='text-zinc-500 flex gap-4 flex-wrap gap-y-0'>{children}</ul>
 		</div>
 	);
 };

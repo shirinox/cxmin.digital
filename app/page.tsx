@@ -3,15 +3,24 @@
 import { motion } from 'framer-motion';
 import { MapPinIcon } from '@heroicons/react/24/outline';
 import Wrapper from '@/components/Wrapper';
+import Link from 'next/link';
 
 const Home = () => {
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='mt-16 mb-12'>
 			<h1 className='text-xl'>hi there, I&apos;m Cosmin 👋</h1>
-			<div className='flex gap-1 items-center text-sm text-zinc-700'>
-				<MapPinIcon className='w-4 my-auto' />
-				<p>Bucharest, Romania</p>
+			<div className='flex flex-col md:flex-row gap-1 justify-center md:items-center md:justify-normal text-sm text-zinc-700'>
+				<div className='flex gap-1'>
+					<MapPinIcon className='w-4 my-auto' />
+					<p>Bucharest, Romania</p>
+				</div>
+
+				<span className='hidden md:block'>&bull;</span>
+				<Link className='text-xs underline text-zinc-600' href='mailto:cosminsebastian2004@gmail.com'>
+					cosminsebastian2004@gmail.com
+				</Link>
 			</div>
+
 			<p className='text-zinc-400 my-6'>
 				I&apos;m a self-taught fullstack developer, perfectionist, and travel enthusiast. I currently freelance
 				most of my work, as I gain more experience, while actively looking for a part-time or full-time position
