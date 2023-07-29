@@ -2,14 +2,16 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/solid';
 
 type NavLinkProps = {
 	path: string;
 	href: string;
 	text: string;
+	icon?: React.ReactNode;
 };
 
-const NavLink = ({ path, href, text }: NavLinkProps) => {
+const NavLink = ({ path, href, text, icon }: NavLinkProps) => {
 	const current_path = usePathname();
 	const is_active = current_path == path;
 	return (
@@ -18,7 +20,10 @@ const NavLink = ({ path, href, text }: NavLinkProps) => {
 				is_active ? 'underline text-[#fff] decoration-zinc-500' : null
 			}`}
 		>
-			<Link href={href}>{text}</Link>
+			<Link className='flex gap-1' href={href}>
+				{text}
+				{icon}
+			</Link>
 		</li>
 	);
 };

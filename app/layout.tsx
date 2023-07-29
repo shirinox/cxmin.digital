@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang='en'>
 			<body className={dm_sans.className}>
 				<div className='mx-auto max-w-2xl text-white'>
-					<div className='mx-4'>
+					<div className='mx-8'>
 						<Navbar />
 						{children}
 						<Footer />
