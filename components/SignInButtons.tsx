@@ -13,6 +13,7 @@ const SignInButtons = ({
 		<>
 			{Object.values(providers!).map((provider) => (
 				<Button
+					key={provider.id}
 					className={`${buttonVariants({ variant: 'white' })} ml-auto`}
 					onClick={() => signIn(provider.id)}
 				>

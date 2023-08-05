@@ -10,6 +10,7 @@ const CommunityPalettes = async () => {
 				(palette) =>
 					palette.is_published && (
 						<Palette
+							key={palette.id!}
 							name={palette.name!}
 							primary={palette.primary!}
 							secondary={palette.secondary!}
