@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/solid';
 
 type NavLinkProps = {
 	path: string;
@@ -16,7 +15,7 @@ const NavLink = ({ path, href, text, icon }: NavLinkProps) => {
 	const is_active = current_path == path;
 	return (
 		<li
-			className={`text-zinc-500 lowercase underline-offset-4 ${
+			className={`text-zinc-500 lowercase underline-offset-2 ${
 				is_active ? 'underline text-[#fff] decoration-zinc-500' : null
 			}`}
 		>

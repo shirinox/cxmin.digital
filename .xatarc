@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Cosmin-s-workspace-2d11qi.eu-central-1.xata.sh/db/cxmindigital",
+  "codegen": {
+    "output": "app/xata/xata.ts"
+  }
+}
