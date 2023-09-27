@@ -13,7 +13,6 @@ const Navbar = () => {
 		<motion.nav initial={{ translateY: -100 }} animate={{ translateY: 0 }} className='my-8'>
 			<ul className='flex gap-3 items-center'>
 				<NavLink path='/' text='home' href='/' />
-				<NavLink path='/palettes' text='palettes' href='/palettes' />
 				<NavLink
 					path='/cv'
 					text='cv'
