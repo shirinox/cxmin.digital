@@ -54,8 +54,8 @@ export default function Home() {
 			<GridCell className='bg-zinc-200 h-full p-8 md:h-48 ring ring-zinc-300 col-span-full md:col-span-3 rounded-lg'>
 				<p className='text-2xl font-semibold mb-4 text-zinc-700'>About me</p>
 				<p className='text-zinc-700/90'>
-					Hi there, I'm Cosmin! I'm a fullstack developer, perfectionist, and travel enthusiast. Balancing my
-					studies while hunting for a part-time or full-time job in the tech world.
+					Hi there, I&apos;m Cosmin! I&apos;m a fullstack developer, perfectionist, and travel enthusiast.
+					Balancing my studies while hunting for a part-time or full-time job in the tech world.
 				</p>
 			</GridCell>
 			<Link className='col-span-2 md:col-span-3' target='_blank' href={'https://cal.com/tatucosmin/30min'}>
