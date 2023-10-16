@@ -45,7 +45,7 @@ export default function Home() {
 					{time} <span className='text-lg font-medium'>Bucharest</span>
 				</p>
 			</GridCell>
-			<Link className='col-span-2 md:col-span-1' href={''}>
+			<Link className='col-span-2 md:col-span-1' href={'https://github.com/shirinox'}>
 				<GridCell className='bg-[#333] rounded-lg grid items-center justify-center ring ring-[#333]/50'>
 					<Github className='w-12 h-12 text-white fill-white' />
 				</GridCell>
