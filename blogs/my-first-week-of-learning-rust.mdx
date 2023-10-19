@@ -1,0 +1,63 @@
+---
+title: 'My first week of learning Rust'
+tags: ['rust']
+description: "Rust is a blazingly fast low-level language which I'm trying to learn. In the first week I've learnt about variables, macros and more."
+date: '18-10-2023'
+---
+
+# Getting started
+
+I'm Cosmin and this is my first blog explaining my whole a-to-z experience on learning a new language. In the first week my main checkpoints were learning Rust's syntax, learaning how to do basic things such as math, printing to console & defining types as I knew Rust is a strongly typed language before commiting to learning it.
+
+My main learning material was [Rust's official documentation](https://doc.rust-lang.org/book/) which guided me through essential basic concepts about the language. I recommend following the same path if you're willing to learn Rust by reading & applying what you've learned afterwards. Rust also offers a "learn by examples" book which you can check out [here](https://doc.rust-lang.org/rust-by-example/).
+
+```rust
+fn main() {
+    println!("Hello, world!);
+}
+```
+
+The first program I've made and the most famous one is of course **Hello World**, learning how to print to the screen. This was very basic, but hey we all have to start somewhere :)
+
+Upon reading the documentation further I've learned more about declaring variables, mutability & control flow. Here's a code snippet:
+
+```rust
+fn main() {
+    // by default all variables are declared as immutable
+    let two = 2;
+
+    // mut keyword enables mutability on variables
+    let mut number = 5;
+}
+```
+
+Moving onto data types, I learnt about types such as **Tuples**, a type which Javascript doesn't have, so this was new to me. I caught on pretty quickly and continued learning more about how **Strings, Arrays and Numbers** work so I can get used to it.
+
+As my first **challange** I made a fibonacci n-th number generator program which turned out to be easier than I expected. I took an easier approach by actually adding together the numbers up to the n-th number instead of using the general formula for the n-th number as I felt that it would be easier this way. Here's the code:
+
+```rust
+use std::io;
+
+fn main() {
+    println!("Fibonacci Number");
+    println!("Please select an n-th value:");
+    let mut a: u128 = 0;
+    let mut b: u128 = 1;
+    let mut n = String::new();
+    io::stdin().read_line(&mut n).expect("Failed reading line.");
+    let mut n: u128 = n.trim().parse().expect("Please input a number.");
+    let res = {
+        while n != 0 {
+            n -= 1;
+            let t: u128;
+            t = a + b;
+            a = b;
+            b = t;
+        }
+        a
+    };
+    println!("The number is: {res}")
+}
+```
+
+Rust seems like a pretty neat language which can really help with productivity in my opinion. As of now, I've moved onto learning structs and collections so I'll definetly make a blog post about those in the near future.
