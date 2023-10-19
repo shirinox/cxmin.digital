@@ -17,7 +17,7 @@ export type BlogPreviewType = {
 	minutes: number;
 };
 
-const path = `./blogs/`;
+const path = `/blogs/`;
 
 const getBlog = async (file: string) => {
 	const raw = fs.readFileSync(path + file).toString();
