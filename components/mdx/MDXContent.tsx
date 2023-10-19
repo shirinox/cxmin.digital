@@ -14,8 +14,8 @@ const MdxComponents = {
 	ul: ({ children }: PropsWithChildren) => <ul className='ml-6'>{children}</ul>,
 	li: ({ children }: PropsWithChildren) => <li className='list-disc'>{children}</li>,
 	p: ({ children }: PropsWithChildren) => <p className='my-2'>{children}</p>,
-	a: ({ children, href }: { children: ReactNode; href: string }) => (
-		<a className='text-lime-700 underline font-medium hover:text-lime-800' href={href}>
+	a: ({ children, href }: PropsWithChildren<{ href?: string }>) => (
+		<a className='text-lime-700 underline font-medium hover:text-lime-800' href={href} target='_blank'>
 			{children}
 		</a>
 	),
