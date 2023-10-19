@@ -14,7 +14,7 @@ type Frontmatter = {
 };
 
 const BlogPage = async ({ params }: { params: { slug: string } }) => {
-	const path = `${process.cwd()}/public/blogs/${params.slug}.mdx`;
+	const path = `${process.cwd()}/app/blogs/${params.slug}.mdx`;
 	const raw = fs.readFileSync(path).toString();
 	const serialized = await serialize(raw, { parseFrontmatter: true });
 	const frontmatter = serialized.frontmatter as Frontmatter;
