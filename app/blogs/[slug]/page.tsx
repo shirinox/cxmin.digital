@@ -14,8 +14,6 @@ type Frontmatter = {
 
 const BlogPage = async ({ params }: { params: { slug: string } }) => {
 	const path = `./blogs/${params.slug}.mdx`;
-	const exists = fs.existsSync(path);
-	if (!exists) return redirect('/not-found');
 	const raw = fs.readFileSync(path).toString();
 	const serialized = await serialize(raw, { parseFrontmatter: true });
 	const frontmatter = serialized.frontmatter as Frontmatter;
