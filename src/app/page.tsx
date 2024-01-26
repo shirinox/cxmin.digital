@@ -27,7 +27,7 @@ import { FaAws } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
-import { MousePointerClick, Quote, Mail } from "lucide-react";
+import { MousePointerClick, Quote } from "lucide-react";
 import GridCell from "./_components/grid";
 
 export default async function Home() {
@@ -55,8 +55,8 @@ export default async function Home() {
             <div className="mt-auto">
               <MousePointerClick className="hidden h-16 w-16 xl:block" />
               <h1>
-                I'm <span className="text-6xl">Cosmin</span>, a designer and
-                developer from Romania.
+                I&apos;m <span className="text-6xl">Cosmin</span>, a designer
+                and developer from Romania.
               </h1>
             </div>
             <p className="mt-3 xl:mt-auto">
@@ -76,7 +76,7 @@ export default async function Home() {
             height={220}
           />
           <div className="z-30 mt-auto">
-            <h2 className="text-[#19826F]">LET'S TALK</h2>
+            <h2 className="text-[#19826F]">LET&apos;S TALK</h2>
             <h2 className="mb-2 text-[#20A68E]">SEND ME A MESSAGE.</h2>
             <Link
               className="font-medium text-[#20A68E] underline"
@@ -119,7 +119,7 @@ export default async function Home() {
             couldn&apos;t be happier with the result. The site is clean, easy to
             navigate, and perfectly captures the essence of our gym.
             Cosmin&apos;s attention to detail and quick turnaround time were
-            impressive. It's been a big help for our online presence.
+            impressive. It&apos;s been a big help for our online presence.
           </p>
           <div className="mt-16 flex flex-col text-right xl:mt-auto">
             <span className="text-4xl font-extrabold uppercase">Mihai</span>
@@ -133,10 +133,10 @@ export default async function Home() {
             <b className="text-lg uppercase text-[#FFE9ED]">you</b> will find
             that my design philosophy is committed to producing work that{" "}
             <b className="text-lg uppercase text-[#FFE9ED]">will</b> capture
-            attention visually and serve a practical purpose, ensuring you'll{" "}
-            <b className="text-lg uppercase text-[#FFE9ED]">only</b> want to
-            engage with the content. You will see designs that are uncluttered
-            and direct, which users can clearly{" "}
+            attention visually and serve a practical purpose, ensuring
+            you&apos;ll <b className="text-lg uppercase text-[#FFE9ED]">only</b>{" "}
+            want to engage with the content. You will see designs that are
+            uncluttered and direct, which users can clearly{" "}
             <b className="text-lg uppercase text-[#FFE9ED]">read</b>,
             emphasizing user-friendliness and the efficient delivery of
             information without unnecessary extras. Each project is developed
@@ -150,7 +150,7 @@ export default async function Home() {
           </p>
         </GridCell>
         <GridCell className="relative grid bg-[#C9FFF2] text-center">
-          <h2 className="mb-4 text-[#181818]">LET'S GET SOCIAL</h2>
+          <h2 className="mb-4 text-[#181818]">LET&apos;S GET SOCIAL</h2>
           <div className="mx-auto grid w-full max-w-64 grid-cols-4 gap-4 text-[#181818]">
             <Link href="https://discord.gg/BNxHGCrDXA">
               <SiDiscord size={32} />
