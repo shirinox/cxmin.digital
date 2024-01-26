@@ -49,17 +49,17 @@ export default async function Home() {
           </Link>
         </div>
       </div>
-      <div className="mx-auto grid h-[130vh] max-w-[1920px] gap-8 md:grid-cols-2 lg:grid-cols-2 xl:h-screen xl:grid-cols-4 xl:grid-rows-3">
-        <GridCell className="grid bg-[#212B88] xl:col-span-2 xl:row-span-2">
-          <div className="grid grid-cols-1 gap-2 xl:grid-cols-2">
+      <div className="mx-auto grid h-[120vh] max-w-[1920px] grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <GridCell className="grid bg-[#212B88]">
+          <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2">
             <div className="mt-auto">
-              <MousePointerClick className="hidden h-16 w-16 xl:block" />
+              <MousePointerClick className="hidden h-16 w-16 2xl:block" />
               <h1>
                 I&apos;m <span className="text-6xl">Cosmin</span>, a designer
                 and developer from Romania.
               </h1>
             </div>
-            <p className="mt-3 xl:mt-auto">
+            <p className="mt-3 2xl:mt-auto">
               I have been freelancing most of my work for the past 3 years.
               Planning, designing, building and launching all of my work by
               myself, allowed me to have a large suite of skills, such as
@@ -67,15 +67,15 @@ export default async function Home() {
             </p>
           </div>
         </GridCell>
-        <GridCell className="relative grid bg-[#06483C] xl:col-span-1 xl:row-span-2">
+        <GridCell className="relative grid bg-[#06483C]">
           <Image
-            className="absolute right-0 top-2 z-10 rotate-[180deg] opacity-30 sm:hidden md:block xl:top-16 xl:block xl:opacity-100"
+            className="absolute right-0 top-2 z-10 rotate-[180deg] opacity-30 sm:hidden md:block 2xl:top-16 2xl:block"
             src="/contact.svg"
             alt="mail flying vector"
             width={250}
             height={220}
           />
-          <div className="z-30 mt-auto">
+          <div className="z-30 mt-auto text-clip">
             <h2 className="text-[#19826F]">LET&apos;S TALK</h2>
             <h2 className="mb-2 text-[#20A68E]">SEND ME A MESSAGE.</h2>
             <Link
@@ -112,7 +112,7 @@ export default async function Home() {
             </div>
           </div>
         </GridCell>
-        <GridCell className="flex flex-col bg-[#D3BEFF] text-lg font-medium text-[#181818] xl:row-span-2">
+        <GridCell className="flex flex-col bg-[#D3BEFF] text-lg font-medium text-[#181818]">
           <Quote size={48} stroke="transparent" fill="#181818" />
           <p className="mt-2">
             I recently had Cosmin develop a website for my gym, and I
@@ -121,14 +121,14 @@ export default async function Home() {
             Cosmin&apos;s attention to detail and quick turnaround time were
             impressive. It&apos;s been a big help for our online presence.
           </p>
-          <div className="mt-16 flex flex-col text-right xl:mt-auto">
+          <div className="mt-16 flex flex-col text-right 2xl:mt-auto">
             <span className="text-4xl font-extrabold uppercase">Mihai</span>
             <span>GALAGYM</span>
           </div>
         </GridCell>
         <GridCell className="bg-[#882134] md:col-span-2">
           <h2 className="text-[#FFC1CC]">Design Philosophy</h2>
-          <p className="font-medium text-[#FF8CA1]">
+          <p className="w-full font-medium text-[#FF8CA1]">
             In a digital world that never stops changing,{" "}
             <b className="text-lg uppercase text-[#FFE9ED]">you</b> will find
             that my design philosophy is committed to producing work that{" "}
@@ -149,7 +149,7 @@ export default async function Home() {
             active engagement are at the heart of every creative choice I make.
           </p>
         </GridCell>
-        <GridCell className="relative grid bg-[#C9FFF2] text-center">
+        <GridCell className="relative col-span-full grid bg-[#C9FFF2] text-center">
           <h2 className="mb-4 text-[#181818]">LET&apos;S GET SOCIAL</h2>
           <div className="mx-auto grid w-full max-w-64 grid-cols-4 gap-4 text-[#181818]">
             <Link href="https://discord.gg/BNxHGCrDXA">
