@@ -46,19 +46,6 @@ export default function Home() {
         </Button>{" "}
         in my free time. Also, here are some key moments from my travels:
       </p>
-      <ImageGrid />
-      <p className="font-light text-neutral-300">
-        I really enjoy{" "}
-        <Link
-          className={LINK_CLASS}
-          href="https://www.tiktok.com/@codewithcosmin"
-        >
-          making development content
-        </Link>
-        , localized to my country as I consider sharing your knowledge back to
-        others is important. I mostly specialize in building Next.js
-        applications as this is what I&apos;ve been using in the past 2 years.
-      </p>
     </main>
   );
 }
